@@ -109,7 +109,9 @@ static const uint8_t A3 = 0x80 | 3;
   For various reasons, Timer 0 is a better choice for the millis timer on the
   '85 processor.
 */
+#ifndef TIMER_TO_USE_FOR_MILLIS
 #define TIMER_TO_USE_FOR_MILLIS                   0
+#endif
 
 /*
   Where to put the software serial? (Arduino Digital pin numbers)

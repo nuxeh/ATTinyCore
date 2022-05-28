@@ -135,7 +135,9 @@ static const uint8_t A10 = 0x80 | 10;
 #define INITIALIZE_ANALOG_TO_DIGITAL_CONVERTER    1
 #define INITIALIZE_SECONDARY_TIMERS               1
 
+#ifndef TIMER_TO_USE_FOR_MILLIS
 #define TIMER_TO_USE_FOR_MILLIS                   0
+#endif
 
 
 // This is commented out. The only place where HAVE_BOOTLOADER is checked is in wiring.c, where it wastes precious bytes of flash resetting timer-related registers out of fear that the bootloader has scribbled on them.

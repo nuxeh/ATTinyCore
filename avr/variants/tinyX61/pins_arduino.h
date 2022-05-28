@@ -134,7 +134,9 @@ static const uint8_t A10 = 0x80 | 10;
 /*
   Timer 0, otherwise there will be no PWM pins.
 */
+#ifndef TIMER_TO_USE_FOR_MILLIS
 #define TIMER_TO_USE_FOR_MILLIS                   0
+#endif
 
 /*
   Where to put the software serial? (Arduino Digital pin numbers)

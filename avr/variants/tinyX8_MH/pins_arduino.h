@@ -50,7 +50,9 @@
 /*
   The old standby ... millis on Timer 0.
 */
+#ifndef TIMER_TO_USE_FOR_MILLIS
 #define TIMER_TO_USE_FOR_MILLIS                   0 //Must be timer 0!
+#endif
 
 /*
   Where to put the software serial? (Arduino Digital pin numbers)
