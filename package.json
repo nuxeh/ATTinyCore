@@ -1,0 +1,6 @@
+{
+    "name": "framework-arduino-avr-attiny",
+    "description": "Arduino Wiring-based Framework (ATtinyCore)",
+    "url": "https://github.com/SpenceKonde/ATTinyCore",
+    "version": "1.5.2"
+}
